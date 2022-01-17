@@ -1,6 +1,4 @@
 
-
-
 const weatheForm = document.querySelector('form')
 const searchELement = document.querySelector('input')
 const messageOne = document.querySelector('#message-1');
