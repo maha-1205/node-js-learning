@@ -19,8 +19,8 @@ const messageTwo = document.querySelector('#message-2')
         }
         else {
              messageOne.textContent = ""
-            messageTwo.textContent = ` ${data.address}` + "\n" +
-  `It is currently ${data.forecast} degrees out. It feels like ${data.feelslike} degrees out. The weather looks ${data.description}`
+            messageTwo.textContent = ` ${data.address} \n It is currently ${data.forecast} degrees out. It feels like ${data.feelslike} degrees out. The weather looks ${data.description}. \n
+            this was recorded at ${data.observationTime}`
         }
         
     })

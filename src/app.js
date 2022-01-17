@@ -49,7 +49,7 @@ app.get("/weather", (req, res) => {
        error
      })
    }
-    weather(longitude, latitude, (error, { temperature, feelslike, description }) => {
+    weather(longitude, latitude, (error, { temperature, feelslike, description , observationTime }) => {
       if (error) {
         return res.send({
           error
@@ -59,7 +59,8 @@ app.get("/weather", (req, res) => {
         forecast: temperature,
         address: placeName,
         feelslike,
-        description
+        description,
+        observationTime
       })
     })
     
